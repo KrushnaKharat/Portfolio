@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import smartresi from "../../Assets/Projects/Smart resi.png"
+import ais from "../../Assets/Projects/ais.png"
 
 function Projects() {
   return (
@@ -25,6 +26,16 @@ function Projects() {
 electricians, plumbers)."
               // ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://residential-services.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ais}
+              isBlog={false}
+              title="Course website"
+              description="A site offering courses and internships in AI, ML, Data Science and related technologies. Implemented a dynamic quiz module within the learning platform, allowing students to take structured, topic-specic assessments after completing lessons. Integrated quiz access control, automatic scoring."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://appliedinsights.in/"
             />
           </Col>
         </Row>
